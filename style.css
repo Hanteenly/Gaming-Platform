@@ -1,0 +1,703 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+    background: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.wrapper{
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(26, 14, 1, 1) 100%);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+header .logo{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    padding-top: 20px;
+}
+
+.logo{
+    padding-top: 50px;
+}
+header nav{
+    float: right;
+    width: 50%;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    color: white;
+}
+
+header nav ul li.active::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: #DC7000;
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+    left: -15px;
+}
+header nav ul li:not(.active):not(.btn) a:hover{
+    border-bottom: 5px solid #DC7000;
+}
+
+header nav ul li.btn a, .email .block button{
+    background: #FA9021;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover, .email .block button:hover{
+    background: #a02604;
+}
+
+.hero--info {
+    max-width: 500px;
+    padding: 0 20px;
+}
+
+
+.hero{
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.herro--info{
+    width: 400px;
+    padding-top: 70px;
+
+}
+
+.herro--info h1{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 40px;
+
+}
+
+.herro--info h2{
+    color: #E87D0E;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.herro--info p{
+    font-weight: 1500;
+    line-height: 170%;
+    margin: 30px;
+
+}
+
+.herro--info .btn, .herro-about .info .btn{
+    background: #FA8305;
+    color: #fff;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 500ms ease;
+    margin-top: 20px;
+}
+
+.herro--info .btn:hover, .herro-about .info .btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hero img{
+    position: absolute;
+    top: -150px;
+    right: 0;
+    padding-top: 80px;
+}
+
+.trending{
+    padding-top: 50px;
+}
+
+.trending h3{
+    font-weight: 600;
+    font-size: 31px;
+}
+
+.trending .see-all{
+    color: white;
+    background: #25211D;
+    border-radius: 5px;
+    padding: 12px 23px;
+    float: right;
+    display: block;
+    transition: all 500ms ease;
+}
+
+.trending .see-all:hover{
+    transform: scale(1.1);
+}
+
+.trending .games{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.trending .games span{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.trending .games span img{
+    position: relative;
+    top: 5px;
+    margin-right: 7px;
+}
+
+.big_text {
+    padding: 50px 0;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    width: 800px;
+}
+
+.banner {
+    padding: 80px 0;
+}
+
+.banner h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.banner p{
+    line-height: 170%;
+    margin-bottom: 30px;
+    width: 550px;
+}
+
+.banner img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.features{
+    background: url("/img/Rectangle 5.png") no-repeat center center fixed;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.features h1{
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features .text p{
+    text-align: center;
+    max-width: 800px;
+    margin-left: 285px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    font-size: 13px;
+}
+
+.features .info{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .info .block{
+    text-align: center;
+    width: 20%;
+    margin: 30px 2%;
+}
+
+.features .info .block img{
+    margin-bottom: 15px;
+}
+
+.features .info{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .info .block{
+    text-align: center;
+    width: 25%;
+    margin: 20px 0;
+}
+
+.projects{
+    padding: 100px 0;
+}
+
+.projects h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+.projects p{
+    margin: 40px 0;
+    text-align: center;
+}
+
+.projects .images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.projects .see-all{
+    color: white;
+    background: #25211D;
+    border-radius: 5px;
+    padding: 12px 23px;
+    float: left;
+    display: block;
+    transition: all 500ms ease;
+    margin-left: 660px;
+    margin-top: 30px;
+}
+
+.projects .see-all:hover{
+    transform: scale(1.1);
+}
+
+.email{
+    padding-bottom: 120px;
+}
+
+.email h3{
+    margin-top: 60px;
+    font-size:  30px;
+}
+
+.email .block{
+    background: #1C140F;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px 3%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email .block h4{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.email .block p{
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.email .block input{
+    background: white;
+    outline: none;
+    bobrder: 0;
+    border-radius: 5px;
+    width: 380px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    height: 32px;
+    position: relative;
+    right: -90px;
+    z-index: 1;
+    padding-right: 100px;
+}
+
+.email .block input::placeholder{
+    color: #898989;
+}
+
+.email .block button{
+    cursor: pointer;
+    border: 0;
+    z-index: 2;
+    position: relative;
+    color: white;
+}
+.herro-about {
+    position: relative;
+}
+.herro-about img{
+    position: absolute;
+    right: -110px;
+    top: +70px;
+    border-radius: 10px;
+}
+.word{
+    padding: 80px 0;
+}
+
+.word h2{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.word .blocks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.word .blocks .block{
+    width: 25%;
+    border-radius: 10px;
+    padding: 50px 35px;
+    background: #1C140F;
+}
+.word .blocks .block h3{
+    font-size: 20px;
+    margin: 20px 0;
+}
+.word .blocks .block .badge{
+    border-radius: 7px;
+    padding: 10px 20px;
+}
+.word .blocks .block .purpure{
+    background: #560F67;
+}
+
+.word .blocks .block .brown{
+    background: #31190D;
+}
+
+.word .blocks .block .green{
+    background: #192A1D;
+}
+.herro-about .info{
+    width: 100%;
+    padding: 250px 0;
+}
+
+.herro-about .info p{
+    width: 500px;
+}
+.herro-about .info h1{
+    margin-bottom: 15px;
+    font-size: 30px;
+    width: 500px;
+}
+
+.herro-about .info .btv{
+    margin-top: 20px;
+}
+
+.hero-contacts h1{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 33px;
+}
+
+.hero-contacts p{
+    text-align: center;
+}
+
+.hero-contacts img{
+    width: 80%;
+    margin: 80px 130px;
+}
+
+.feedback{
+    padding: 70px 70px;
+    background: #1C140F;
+}
+.feedback h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.feedback p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.feedback form{
+    margin: 80px auto;
+    width: 600px;
+}
+
+.feedback form .inline{
+    display: flex;
+    justify-content: space-between;
+}
+.feedback form .inline>div{
+    width: 50%;
+}
+
+.feedback form lable{
+    color: #4F4F4F;
+    font-size: 14px;
+    width: 90%;
+}
+.feedback form .email1{
+    width: 90%;
+}
+.feedback form input,
+.feedback form textarea{
+    background: #2C2420;
+    border-radius: 10px;
+    border: 1px solid #CECECE;
+    display: block;
+    padding: 15px 10px;
+    outline: none;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 7px;
+    width: 80%;
+}
+.feedback form textarea{
+    resize: none;
+    height: 200px;
+}
+
+.feedback form button{
+    background: #DC7000;
+    border-radius: 5px;
+    border: 0;
+    float: right;
+    cursor: pointer;
+    color: #fff;
+    padding: 15px 35px;
+    margin: 0 40px;
+}
+.feedback form button:hover{
+    background: #b01414;
+}
+.feedback form .one-line{
+    width: 90%;
+}
+.starter {
+    text-align: center;
+    padding-top: 110px;
+}
+.starter .z{
+    color: #DC7000;
+}
+.starter .z:hover{
+    color: #a02604;
+}
+.starter .col{
+    margin-left: 10px;
+}
+.starter .main{
+    margin: 30px auto;
+}
+.starter .main p{
+    margin: 25px 30px;
+}
+.starter .blocks{
+    display: flex;
+    background: #1C140F;
+    width: 55%;
+    border-radius: 10px;
+    padding: 70px 35px;
+    margin-left: 350px;
+}
+.starter .blocks .block1{
+    border-right: 2px solid #CECECE;
+    display: flex;
+    width: 60%;
+    margin-left: 80px;
+}
+.starter .blocks .vertical-line{
+    display: flex;
+}
+.starter .blocks .block1 div{
+    margin-left: 20px;
+}
+.starter .blocks .block3 div h2{
+    margin-left: -20px;
+}
+.starter .blocks .block2 div h2{
+    margin-left: -27px;
+}
+.starter .blocks .block1 div h2{
+    margin-left: -7px;
+}
+.starter .blocks .block2{
+    border-right: 1px solid #CECECE;
+    display: flex;
+    width: 60%;
+    margin-left: 80px;
+}
+
+.starter .blocks .block2 div{
+    margin-left: 20px;
+}
+
+.starter .blocks .block3{
+    display: flex;
+    width: 60%;
+    margin-left: 80px;
+}
+.starter .blocks .block3 div{
+    margin-left: 20px;
+    display: block;
+}
+
+.center .block1{
+    display: flex;
+    width: 100%;
+    margin: 120px 270px;
+}
+.center .block1 .block{
+    margin-left: 50px;
+
+}
+.center .block1 .block l{
+    display: flex;
+    margin-top: 30px;
+}
+.center .block1 .block l img{
+    margin-right: 10px;
+}
+.center .block1 h1{
+    font-size: 27px;
+    line-height: 40px;
+    width: 50%;
+}
+.center .block1 p{
+    width: 60%;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.center .block2 {
+    display: flex;
+    width: 69%;
+    margin-top: 140px;
+    padding-left: 270px;
+}
+.center .block2 .block h2{
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.center .block2 p{
+    width: 70%;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-size: 17px;
+}
+.center .block2 h2{
+    width: 70%;
+}
+git add .
+.center .block2 button{
+    background: #DC7000;
+    color: #fff;
+    margin-right: 600px;
+    margin-top: 50px;
+    padding: 13px 40px;
+    white-space: nowrap;
+}
+
+.center .block2 button:hover{
+    background: #b01414;
+}
+footer{
+    background: black;
+}
+
+footer .blocks{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .blocks p{
+    width: 300px;
+    margin: 15px;
+}
+footer .blocks h4{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+footer .blocks .contact h4{
+    margin-left: 14px;
+}
+footer .blocks ul{
+    list-style: none;
+}
+
+footer .blocks ul li{
+    margin-top: 7px;
+    opacity: 0.8;
+}
+footer .blocks .logo{
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+footer hr{
+    margin: 30px 0;
+    border: 0;
+    height: 0.8px;
+    background: #ccc;
+}
+
+footer > p{
+    text-align: center;
+}
