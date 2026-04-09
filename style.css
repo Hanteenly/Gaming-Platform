@@ -230,7 +230,7 @@ header nav ul li.btn a:hover, .email .block button:hover{
 }
 
 .features{
-    background: url("/img/Rectangle 5.png") no-repeat center center fixed;
+    background: url("Rectangle-5.png") no-repeat center center fixed;
     background-size: cover;
     padding: 80px 0;
 }
@@ -361,6 +361,7 @@ header nav ul li.btn a:hover, .email .block button:hover{
     right: -90px;
     z-index: 1;
     padding-right: 100px;
+    padding-top: 0.5px;
 }
 
 .email .block input::placeholder{
@@ -624,8 +625,8 @@ header nav ul li.btn a:hover, .email .block button:hover{
 }
 
 .center .block2 {
+    width: 60%;
     display: flex;
-    width: 69%;
     margin-top: 140px;
     padding-left: 270px;
 }
@@ -633,17 +634,20 @@ header nav ul li.btn a:hover, .email .block button:hover{
     font-size: 30px;
     line-height: 40px;
 }
-
+.center .block2 img{
+    margin-left: -30px;
+}
 .center .block2 p{
     width: 70%;
     margin-bottom: 20px;
     margin-top: 40px;
     font-size: 17px;
+    line-height: 22px;
 }
 .center .block2 h2{
     width: 70%;
 }
-git add .
+
 .center .block2 button{
     background: #DC7000;
     color: #fff;
@@ -654,6 +658,37 @@ git add .
 }
 
 .center .block2 button:hover{
+    background: #b01414;
+}
+
+.center .block3{
+    display: flex;
+    width: 86%;
+    padding-left: 270px;
+    margin-top: 150px;
+}
+
+.center .block3 .block{
+    margin-left: 110px;
+}
+.center .block3 p{
+    width: 70%;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.center .block3 button{
+    background: #DC7000;
+    color: #fff;
+    margin-right: 600px;
+    margin-top: 190px;
+    padding: 13px 40px;
+    white-space: nowrap;
+}
+
+.center .block3 button:hover{
     background: #b01414;
 }
 footer{
