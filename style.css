@@ -698,7 +698,36 @@ header nav ul li.btn a:hover, .email .block button:hover{
 .center .block3 button:hover{
     background: #b01414;
 }
+.center .block4{
+    display: flex;
+    width: 73%;
+    padding-left: 270px;
+    margin-top: 150px;
 
+}
+.center .block4 .block{
+    line-height: 25px;
+    margin-right: 70px;
+    width: 50%;
+}
+.center .block4 h1{
+    line-height: 40px;
+}
+.center .block4 p{
+    margin-top: 45px;
+}
+.center .block4 button{
+    background: #DC7000;
+    color: #fff;
+    margin-right: 600px;
+    margin-top: 190px;
+    padding: 13px 40px;
+    white-space: nowrap;
+}
+
+.center .block4 button:hover{
+    background: #b01414;
+}
 .next {
     width: 100%;
     background: #1C140F;
