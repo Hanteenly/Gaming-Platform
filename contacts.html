@@ -11,45 +11,45 @@
         <span class="logo">logo</span>
         <nav>
             <ul>
-                <li ><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About us</a></li>
                 <li><a href="Portfolio.html">Portfolio</a></li>
                 <li><a href="#">News</a></li>
-                <li class="btn" ><a href="contacts.html">Contacts</a></li>
+                <li class="btn active"><a href="contacts.html">Contacts</a></li>
             </ul>
         </nav>
     </header>
-    <div class = "container hero-contacts">
+    <div class="container hero-contacts">
         <h1>Lorem Ipsum is simply dummy text of the printing and</h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-        <img src="/img/Huge-Global.png" alt="">
+        <img src="./img/Huge-Global.png" alt="">
     </div>
 
-    <div class = "feedback">
-        <div class = "container">
+    <div class="feedback">
+        <div class="container">
             <h2>Say hello</h2>
             <p>Lorem Ipsum is simply dummy text of the printing</p>
             <form>
-                <div class = "inline">
+                <div class="inline">
                     <div>
-                        <lable>Fist Name</lable>
-                        <input type = "text" id = "FirstNameField">
+                        <label for="FirstNameField">First Name</label>
+                        <input type="text" id="FirstNameField">
                     </div>
                     <div>
-                        <lable>Last Name</lable>
-                        <input type="text" id = "LastNameField">
+                        <label for="LastNameField">Last Name</label>
+                        <input type="text" id="LastNameField">
                     </div>
                 </div>
-                <lable>Email Address</lable>
-                <input class = "email1" id = "emailField" type="email">
-                <lable>Message</lable>
-                <textarea class = "one-line" id="massageField"></textarea>
-                <button onclick="checkEmail()" type = "button" >Get in touch</button>
+                <label for="emailField">Email Address</label>
+                <input class="email1" id="emailField" type="email">
+                <label for="massageField">Message</label>
+                <textarea class="one-line" id="massageField"></textarea>
+                <button onclick="checkEmail()" type="button">Get in touch</button>
             </form>
         </div>
     </div>
     <footer>
-        <div class = "blocks container">
+        <div class="blocks container">
             <div>
                 <span class="logo">logo</span>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
@@ -63,14 +63,14 @@
                     <li>Contact us</li>
                 </ul>
             </div>
-            <div class = "contact">
+            <div class="contact">
                 <h4>Contact us</h4>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                 <p>+908 89097 890</p>
             </div>
         </div>
         <hr>
-        <p>Copyright ® 2021 Lorem All rights Rcerved</p>
+        <p>Copyright ® 2021 Lorem All rights Reserved</p>
     </footer>
     <script>
         function checkEmail(){
@@ -78,15 +78,14 @@
             let FirstName = document.querySelector('#FirstNameField').value;
             let LastName = document.querySelector('#LastNameField').value;
             let massage = document.querySelector('#massageField').value;
-            if(LastName && FirstName && massage != null) {
-                if (!email.includes('@')) {
-                    alert('Please enter a valid email address');
-                } else if (!email.includes('.')) {
+
+            if(LastName.trim() && FirstName.trim() && massage.trim()) {
+                if (!email.includes('@') || !email.includes('.')) {
                     alert('Please enter a valid email address');
                 } else {
-                    alert("your address has been recorded")
+                    alert("Your address has been recorded");
                 }
-            }else{
+            } else {
                 alert('Please enter all information');
             }
         }
