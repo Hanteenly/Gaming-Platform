@@ -336,6 +336,13 @@ header nav ul li.btn a:hover, .email .block button:hover{
     align-items: center;
 }
 
+.email p{
+    margin-top: 40px;
+    width: 35%;
+    margin-bottom: 80px;
+    line-height: 30px;
+}
+
 .email .block h4{
     font-size: 30px;
     font-weight: 500;
@@ -714,6 +721,43 @@ header nav ul li.btn a:hover, .email .block button:hover{
     margin-bottom: 25px;
 }
 
+.team{
+    margin-top: 100px;
+    padding-left: 180px;
+}
+.team .blocks{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+}
+.team .blocks .block1,
+.team .blocks .block2,
+.team .blocks .block3,
+.team .blocks .block4{
+    background: #1C140F;
+    border-radius: 20px;
+    width: 295px;
+    height: 253px;
+
+
+}
+.team .blocks .block2,
+.team .blocks .block3,
+.team .blocks .block4{
+    margin-left: 40px;
+}
+.team .blocks p{
+    margin-left: 35px;
+    margin-top: 5px;
+}
+.team .blocks h3{
+    margin-left: 10px;
+}
+.team .blocks .block{
+    align-content: center;
+    margin-left: 90px;
+    margin-top: 50px;
+}
 footer{
     background: black;
 }
