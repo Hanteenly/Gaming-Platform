@@ -757,7 +757,7 @@ header nav ul li.btn a:hover, .email .block button:hover{
 .team .blocks{
     margin-top: 50px;
     display: flex;
-    width: 100%;
+    width: 80%;
 }
 .team .blocks .block1,
 .team .blocks .block2,
@@ -773,7 +773,7 @@ header nav ul li.btn a:hover, .email .block button:hover{
 .team .blocks .block2,
 .team .blocks .block3,
 .team .blocks .block4{
-    margin-left: 40px;
+    margin-left: 10px;
 }
 .team .blocks p{
     margin-left: 35px;
