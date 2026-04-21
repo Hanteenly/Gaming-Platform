@@ -637,9 +637,10 @@ header nav ul li.btn a:hover, .email .block button:hover{
     margin-top: 140px;
     padding-left: 270px;
 }
-.center .block2 .block h2{
+.center .block2 .block h1{
     font-size: 30px;
     line-height: 40px;
+    width: 80%;
 }
 .center .block2 img{
     margin-left: -30px;
@@ -651,7 +652,11 @@ header nav ul li.btn a:hover, .email .block button:hover{
     font-size: 17px;
     line-height: 22px;
 }
-.center .block2 h2{
+
+.center .block2 .block{
+    width: 100%;
+}
+.center .block2 h1{
     width: 70%;
 }
 
@@ -659,7 +664,7 @@ header nav ul li.btn a:hover, .email .block button:hover{
     background: #DC7000;
     color: #fff;
     margin-right: 600px;
-    margin-top: 50px;
+    margin-top: 90px;
     padding: 13px 40px;
     white-space: nowrap;
 }
@@ -670,7 +675,7 @@ header nav ul li.btn a:hover, .email .block button:hover{
 
 .center .block3{
     display: flex;
-    width: 86%;
+    width: 90%;
     padding-left: 270px;
     margin-top: 150px;
 }
@@ -685,7 +690,9 @@ header nav ul li.btn a:hover, .email .block button:hover{
     font-size: 17px;
     line-height: 25px;
 }
-
+.center .block3 h1{
+    width: 70%;
+}
 .center .block3 button{
     background: #DC7000;
     color: #fff;
@@ -757,7 +764,7 @@ header nav ul li.btn a:hover, .email .block button:hover{
 .team .blocks{
     margin-top: 50px;
     display: flex;
-    width: 80%;
+    width: 85%;
 }
 .team .blocks .block1,
 .team .blocks .block2,
@@ -784,8 +791,34 @@ header nav ul li.btn a:hover, .email .block button:hover{
 }
 .team .blocks .block{
     align-content: center;
-    margin-left: 90px;
+    margin-left: 60px;
     margin-top: 50px;
+}
+
+.search{
+    background: #1C140F;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    height: 40px;
+    position: relative;
+    right: -90px;
+    z-index: 1;
+    padding-right: 10px;
+    margin-top: 50px;
+    margin-left: -180px;
+    padding-left: 50px;
+    color: #fff;
+}
+.pur{
+    position: absolute;
+    z-index: 2;
+    margin-top: 63px;
+    padding-left: 705px;
+
 }
 footer{
     background: black;
