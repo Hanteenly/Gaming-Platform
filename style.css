@@ -821,6 +821,70 @@ header nav ul li.btn a:hover, .email .block button:hover{
 }
 
 .news{
+    display: flex;
+}
+.news .right{
+    margin-left: -1300px;
+}
+
+.news .right .block1,
+.news .right .block2,
+.news .right .block3,
+.news .right .block4,
+.news .right .block5,
+.news .right .block6,
+.news .right .block7{
+    display: flex;
+    margin-bottom: 40px;
+}
+.news .right .block{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.news .right .p{
+    display: flex;
+}
+.news .right .block1 .but{
+    background: #FF8484;
+    padding: 9px 28px;
+}
+
+.news .right .block2 .but{
+    background: #2351FC;
+    padding: 9px 28px;
+}
+.news .right .block3 .but{
+    background: #FF7C32;
+    padding: 9px 28px;
+}
+.news .right .block4 .but{
+    background: #2351F5;
+    padding: 9px 28px;
+}
+.news .right .block5 .but{
+    background: #23A54F;
+    padding: 9px 28px;
+}
+.news .right .block6 .but{
+    background: #2351F5;
+    padding: 9px 28px;
+}
+.news .right .block7 .but{
+    background: #9923F3;
+    padding: 9px 28px;
+}
+.news .right .but{
+    margin-right: 12px;
+}
+.news .right .duw{
+    margin-top: 9px;
+}
+
+.news .right h2{
+    width: 80%;
+    margin-top: 30px;
+}
+.news{
     margin-top: 100px;
 }
 .news .left{
@@ -828,13 +892,18 @@ header nav ul li.btn a:hover, .email .block button:hover{
     line-height: 30px;
 }
 .news .left .text{
-    width: 35%;
+    width: 28%;
 
 }
 .news .left .hr{
-    margin-bottom: 50px;
-    margin-top: 50px;
-    width: 38.4%;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    width: 28.5%;
+
+    border: none;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.5;
 }
 .news .left h1{
     line-height: 40px;
